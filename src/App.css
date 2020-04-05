@@ -1,0 +1,48 @@
+.App {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "c"
+    "f";
+  grid-template-rows: 60px 5fr 1fr;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+}
+.Header {
+  grid-area: h;
+  font-size: 25px;
+  text-align: center;
+  background-color: chartreuse;
+}
+
+.Content-div {
+  display: inline-block;
+  padding: 10px;
+}
+
+.Content {
+  grid-area: c;
+  text-align: center;
+  font-size: 25px;
+  background-color: chocolate;
+}
+
+.Content a {
+  color: white;
+  text-decoration: none;
+}
+.Content a.active {
+  color: rgb(88, 34, 189);
+}
+
+.Footer {
+  grid-area: f;
+  font-size: 25px;
+  text-align: center;
+  background-color: crimson;
+}
+.App-link {
+  color: #61dafb;
+  font-size: 25px;
+  padding: 10px;
+}
